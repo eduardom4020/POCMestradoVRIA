@@ -1,0 +1,32 @@
+{
+  "name": "vria-boilerplate",
+  "homepage": ".",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prestart": "env HTTPS=true SSL_CRT_FILE=cert.pem SSL_KEY_FILE=key.pem PORT=3000 node ./pre-start.js",
+    "start": "env BROWSER=none react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "aframe-environment-component": "^2.0.0",
+    "aframe-react": "^4.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "vria": "^0.9.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "qrcode-terminal": "^0.12.0",
+    "react-scripts": "^4.0.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
