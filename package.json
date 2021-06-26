@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prestart": "env HTTPS=true SSL_CRT_FILE=cert.pem SSL_KEY_FILE=key.pem PORT=3000 node ./pre-start.js",
-    "start": "env BROWSER=none react-scripts start",
+    "prestart": "cross-env HTTPS=true SSL_CRT_FILE=cert.pem SSL_KEY_FILE=key.pem PORT=3000 BROWSER=none node ./pre-start.js",
+    "start": "cross-env HTTPS=true SSL_CRT_FILE=cert.pem SSL_KEY_FILE=key.pem PORT=3000 BROWSER=none react-scripts start",
     "build": "react-scripts build"
   },
   "dependencies": {

@@ -12,6 +12,8 @@ if(ipv4List && ipv4List.length > 0) {
     
     console.log('Please connect your cellphone in the same wifi network of this computer. Then navigate to the following address or scan the qr code bellow to test your application.');
 
+    console.log('Env vars ', process.env.SSL_CRT_FILE, process.env.SSL_KEY_FILE)
+
     console.log(link);
     qrcode.generate(link, {small: true});
 
